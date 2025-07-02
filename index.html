@@ -5,9 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Home Page</title>
   <link rel="stylesheet" href="/css/style.css">
+   <link rel="stylesheet" href="/css/firstSection.css">
 </head>
 <body>
-     <h1>Hii, I'm Anuradha Gupta</h1>
+
+      <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo"> GET AN INTERVENTION</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <a href="tel:123-456-7890" class="call-button">CALL NOW FOR A CONSULT 123-456-7890</a>
+        </div>
+    </header>
+
+    <!-- First Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>
+                    GET AN
+                    <span class="highlight">INTERVENTION</span>
+                </h1>
+                <p>
+                    Showing greater respect to older adults can be done in several ways, 
+                    acknowledging and putting to use the talents and skills of older adults, creating 
+                    intergenerational initiatives, and allowing older adults to stay active and independent 
+                    for as long as possible.
+                </p>
+            </div>
+            <div class="contact-form">
+                <h3>Contact Us</h3>
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-field">
+                            <input type="text" placeholder="First Name" required>
+                        </div>
+                        <div class="form-field">
+                            <input type="text" placeholder="Last Name" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <input type="email" placeholder="Business Email" required>
+                        </div>
+                        <div class="form-field">
+                            <input type="text" placeholder="Company">
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <select required>
+                            <option value="">Country</option>
+                            <option value="us">United States</option>
+                            <option value="ca">Canada</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="au">Australia</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="submit-btn"> Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
 <script src="/js/script.js"></script>

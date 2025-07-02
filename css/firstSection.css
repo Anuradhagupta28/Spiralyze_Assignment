@@ -1,0 +1,111 @@
+ .hero {
+            background: linear-gradient(135deg, var(--primary-green) 0%, var(--accent-green) 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="40" r="1.5" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="80" r="1" fill="rgba(255,255,255,0.1)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            font-size: 4rem;
+            color: var(--white);
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .hero-content h1 .highlight {
+            font-weight: bold;
+            display: block;
+        }
+
+        .hero-content p {
+            color: rgba(255,255,255,0.9);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 2.5rem;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .contact-form h3 {
+            color: var(--white);
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .form-field {
+            margin-bottom: 1rem;
+        }
+
+        .form-field input,
+        .form-field select {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 8px;
+            background: rgba(255,255,255,0.1);
+            color: var(--white);
+            font-size: 1rem;
+        }
+
+        .form-field input::placeholder {
+            color: rgba(255,255,255,0.7);
+        }
+
+        .submit-btn {
+            width: 100%;
+            background: var(--success-green);
+            color: var(--white);
+            padding: 1rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background: #218838;
+            transform: translateY(-2px);
+        }
