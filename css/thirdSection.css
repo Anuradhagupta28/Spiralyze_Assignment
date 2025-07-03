@@ -14,8 +14,6 @@
 }
 
 .testimonial-container {
-  /* margin: 0 auto; */
-  /* padding: 0 2rem; */
   display: grid;
   grid-template-columns: 290px 1fr;
   gap: 1rem;
@@ -27,7 +25,6 @@
 
 .testimonial-image img {
   width: 100%;
-  /* height: 340px; */
   object-fit: cover;
 }
 
@@ -37,18 +34,7 @@
   border-radius: 2px;
   color: var(--white);
   position: relative;
-  /* height: 80%; */
 }
-
-/* .testimonial-content::before {
-  content: '"';
-  font-size: 4rem;
-  color: var(--light-green);
-  position: absolute;
-  top: 1rem;
-  right: 2rem;
-  opacity: 0.5;
-} */
 
 .testimonial-content h4 {
   font-size: 1.3rem;
@@ -68,8 +54,8 @@
   margin-top: 2rem;
 }
 .grey-icon {
-  color: #eaeaea; /* light grey, or use #999, #aaa, etc. */
-  font-size: 34px; /* optional: adjust size */
+  color: #eaeaea;
+  font-size: 34px;
 }
 
 .dot {
@@ -125,26 +111,12 @@
 }
 
 .service-card {
-  /* background: var(--white); */
   padding: 2rem;
   border-radius: 5px;
   text-align: center;
   border: 2px solid #5bc8af;
-  /* transition: all 0.3s ease; */
   cursor: pointer;
 }
-
-/* .service-card:hover {
-  border-color: var(--accent-green);
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.service-card.active {
-  border-color: var(--accent-green);
-  background: var(--primary-green);
-  color: var(--white);
-} */
 
 .service-card h4 {
   font-size: 1.1rem;
