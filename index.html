@@ -1,233 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Home Page</title>
-  <link rel="stylesheet" href="/css/style.css">
-   <link rel="stylesheet" href="/css/firstSection.css">
-   <link rel="stylesheet" href="/css/secondSection.css">
-    <link rel="stylesheet" href="/css/thirdSection.css">
-        <link rel="stylesheet" href="/css/fourthSection.css">
-
-
-</head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/firstSection.css" />
+    <link rel="stylesheet" href="/css/secondSection.css" />
+    <link rel="stylesheet" href="/css/thirdSection.css" />
+    <link rel="stylesheet" href="/css/fourthSection.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- First Section -->
+    <div class="firstSection">
       <header class="header">
         <div class="nav-container">
-            <a href="#" class="logo"> GET AN INTERVENTION</a>
+          <a href="#" class="logo">
+            <span id="logo-left">GET AN</span> INTERVENTION</a
+          >
+          <div class="nav-right-section">
             <nav>
-                <ul class="nav-menu">
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                </ul>
+              <ul class="nav-menu">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+              </ul>
             </nav>
-            <a href="tel:123-456-7890" class="call-button">CALL NOW FOR A CONSULT 123-456-7890</a>
+            <span class="nav-divider">|</span>
+            <a href="tel:123-456-7890" class="call-button"
+              >CALL NOW FOR A CONSULT 123-456-7890</a
+            >
+          </div>
         </div>
-    </header>
-
-    <!-- First Section -->
-    <section id="home" class="hero">
+      </header>
+      <section id="home" class="hero">
         <div class="hero-container">
-            <div class="hero-content">
-                <h1>
-                    GET AN
-                    <span class="highlight">INTERVENTION</span>
-                </h1>
-                <p>
-                    Showing greater respect to older adults can be done in several ways, 
-                    acknowledging and putting to use the talents and skills of older adults, creating 
-                    intergenerational initiatives, and allowing older adults to stay active and independent 
-                    for as long as possible.
-                </p>
-            </div>
-            <div class="contact-form">
-                <h3>Contact Us</h3>
-                <form id="contactForm">
-                    <div class="form-row">
-                        <div class="form-field">
-                            <input type="text" placeholder="First Name" required>
-                        </div>
-                        <div class="form-field">
-                            <input type="text" placeholder="Last Name" required>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-field">
-                            <input type="email" placeholder="Business Email" required>
-                        </div>
-                        <div class="form-field">
-                            <input type="text" placeholder="Company">
-                        </div>
-                    </div>
-                    <div class="form-field">
-                        <select required>
-                            <option value="">Country</option>
-                            <option value="us">United States</option>
-                            <option value="ca">Canada</option>
-                            <option value="uk">United Kingdom</option>
-                            <option value="au">Australia</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="submit-btn"> Submit</button>
-                </form>
-            </div>
+          <div class="hero-content">
+            <h1>
+              <span id="outlined-text">GET AN</span>
+              <span class="highlight">INTERVENTION</span>
+            </h1>
+            <p>
+              Showing greater respect to older adults can be done in several
+              ways, acknowledging and putting to use the talents and skills of
+              older adults, creating intergenerational initiatives, and allowing
+              older adults to stay active and independent for as long as
+              possible.
+            </p>
+          </div>
+
+          <div class="contact-container">
+            <h1 class="contact-title">Contact Us</h1>
+            <form id="contactForm">
+              <div class="form-grid">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-input"
+                    id="firstName"
+                    placeholder=" "
+                    required
+                  />
+                  <label class="form-label" for="firstName">First Name</label>
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-input"
+                    id="lastName"
+                    placeholder=" "
+                    required
+                  />
+                  <label class="form-label" for="lastName">Last Name</label>
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-input"
+                    id="email"
+                    placeholder=" "
+                    required
+                  />
+                  <label class="form-label" for="email">Business Email</label>
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-input"
+                    id="company"
+                    placeholder=" "
+                  />
+                  <label class="form-label" for="company">Company</label>
+                </div>
+              </div>
+
+              <div class="form-group full-width">
+                <select class="form-select" id="country" value="" required>
+                  <option value="In" disabled selected hidden></option>
+                  <option value="us">United States</option>
+                  <option value="ca">Canada</option>
+                  <option value="uk">United Kingdom</option>
+                </select>
+                <label class="form-label" for="country">Country</label>
+              </div>
+
+              <button type="submit">
+                <img src="./Images/forward.png" alt="Submit" class="icon" />
+                Submit
+              </button>
+            </form>
+          </div>
         </div>
-    </section>
+      </section>
+    </div>
 
     <!-- second Section -->
-      <div class="wave-divider"></div>
+    <div class="wave-divider"></div>
 
-  
     <section class="image-gallery">
-        <div class="gallery-container">
-            <div class="gallery-item">
-                <img src="/Images/image1.png" alt="Elderly care" />
-            </div>
-            <div class="gallery-item">
-                <img src="/Images/image2.png" alt="Senior couple" />
-            </div>
-            <div class="gallery-item">
-                <img src="/Images/image3.png" alt="Group of seniors" />
-            </div>
+      <div class="gallery-container">
+        <div class="gallery-item">
+          <img src="/Images/image1.png" alt="Elderly care" />
         </div>
+        <div class="gallery-item">
+          <img src="/Images/image2.png" alt="Senior couple" />
+        </div>
+        <div class="gallery-item">
+          <img src="/Images/image3.png" alt="Group of seniors" />
+        </div>
+      </div>
     </section>
 
-   
     <section id="about" class="understanding">
-        <div class="section-container">
-            <h2 class="section-title">
-                WE <span class="highlight">UNDERSTAND</span>
-            </h2>
-            <div class="understanding-content">
-                <div class="understanding-item">
-                    <p>
-                        Older adults want to play active and meaningful roles in their lives, including as part of a social network, a neighbourhood and a community. Service providers and caregivers must consider that a lack of sense of purpose can become problematic as people age. "Productive" isn't limited activities and volunteer work is important.
-                    </p>
-                </div>
-                <div class="understanding-item">
-                    <p>
-                        Older adults want to stay active and contribute to society in a reciprocal manner, meaning that they want to exchange their services and skills with others for the mutual benefit and wellbeing of their community. In 2020, 25% active older adults were eligible for inclusion.
-                    </p>
-                </div>
-                <div class="understanding-item">
-                    <p>
-                        To stimulate social contacts, neighbourhood initiatives can be developed. Social meeting places, such as pubs and churches can help to foster the development of close and peripheral relationships and achieve a greater quality of life throughout the neighbourhood.
-                    </p>
-                </div>
-            </div>
-            <div class="success-rate">
-                <a href="#">92% Success Rate →</a>
-            </div>
+      <div class="section-container">
+        <h2 class="section-title">
+          WE <span class="highlight">UNDERSTAND</span>
+        </h2>
+        <div class="understanding-content">
+          <div class="understanding-item">
+            <p>
+              Older adults want to play active and meaningful roles in their
+              lives, including as part of a social network, a neighbourhood and
+              a community. Service providers and caregivers must consider that a
+              lack of sense of purpose can become problematic as people age.
+              "Productive" isn't limited activities and volunteer work is
+              important.
+            </p>
+          </div>
+          <div class="understanding-item">
+            <p>
+              Older adults want to stay active and contribute to society in a
+              reciprocal manner, meaning that they want to exchange their
+              services and skills with others for the mutual benefit and
+              wellbeing of their community. In 2020, 25% active older adults
+              were eligible for inclusion.
+            </p>
+          </div>
+          <div class="understanding-item">
+            <p>
+              To stimulate social contacts, neighbourhood initiatives can be
+              developed. Social meeting places, such as pubs and churches can
+              help to foster the development of close and peripheral
+              relationships and achieve a greater quality of life throughout the
+              neighbourhood.
+            </p>
+          </div>
         </div>
+        <div class="success-rate">
+          <a href="#">92% Success Rate →</a>
+        </div>
+      </div>
     </section>
 
     <section class="testimonial">
-        <div class="testimonial-container">
-            <div class="testimonial-image">
-                <img src="/Images/image4.png" alt="Abbie Harvey" />
-            </div>
-            <div class="testimonial-content">
-                <h4>Abbie Harvey</h4>
-                <p>
-                    I have been caring for my mom & dad off and on for about 10 years now, and I know the importance of me being there for appointments. Older people need attention, love and care that they truly deserve.
-                </p>
-            </div>
+      <div class="testimonial-container">
+        <div class="testimonial-image">
+          <img src="/Images/image4.png" alt="Abbie Harvey" />
         </div>
-        <div class="testimonial-dots">
-            <div class="dot active"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-           
+        <div class="testimonial-content">
+          <h4>Abbie Harvey</h4>
+          <p>
+            I have been caring for my mom & dad off and on for about 10 years
+            now, and I know the importance of me being there for appointments.
+            Older people need attention, love and care that they truly deserve.
+          </p>
         </div>
+      </div>
+      <div class="testimonial-dots">
+        <div class="dot active"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
     </section>
-<!-- third Section -->
-     <section class="services">
-        <div class="section-container">
-            <h2 class="section-title">
-                WE <span class="highlight">CAN ORGANIZE EVERYTHING</span>
-            </h2>
-            <div class="services-intro">
-                <h3>Interventions should focus on older adult's desire for connectedness, participation and independence.</h3>
-                <p>
-                    Loneliness and social isolation are growing public health concerns in our aging society. Whilst these experiences occur across the life span, 50% of individuals aged over 60 are at risk of social isolation and one-third will experience some degree of loneliness later in life. It is vital to reduce loneliness and social isolation among older adults.
-                </p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card active">
-                    <h4>Needs Assessment</h4>
-                </div>
-                <div class="service-card">
-                    <h4>Treatment Planning & Placement</h4>
-                </div>
-                <div class="service-card">
-                    <h4>Transportation & Logistics</h4>
-                </div>
-                <div class="service-card">
-                    <h4>Insurance Advocacy</h4>
-                </div>
-                <div class="service-card">
-                    <h4>Employment Advocacy</h4>
-                </div>
-                <div class="service-card">
-                    <h4>Aftercare Planning</h4>
-                </div>
-            </div>
-            <div class="service-info">
-                <p>
-                    We're experienced in our individual crafts and understand how each one of our disciplines can lend itself to realizing broader goals for our clients.
-                </p>
-            </div>
+    <!-- third Section -->
+    <section class="services">
+      <div class="section-container">
+        <h2 class="section-title">
+          WE <span class="highlight">CAN ORGANIZE EVERYTHING</span>
+        </h2>
+        <div class="services-intro">
+          <h3>
+            Interventions should focus on older adult's desire for
+            connectedness, participation and independence.
+          </h3>
+          <p>
+            Loneliness and social isolation are growing public health concerns
+            in our aging society. Whilst these experiences occur across the life
+            span, 50% of individuals aged over 60 are at risk of social
+            isolation and one-third will experience some degree of loneliness
+            later in life. It is vital to reduce loneliness and social isolation
+            among older adults.
+          </p>
         </div>
+        <div class="services-grid">
+          <div class="service-card active">
+            <h4>Needs Assessment</h4>
+          </div>
+          <div class="service-card">
+            <h4>Treatment Planning & Placement</h4>
+          </div>
+          <div class="service-card">
+            <h4>Transportation & Logistics</h4>
+          </div>
+          <div class="service-card">
+            <h4>Insurance Advocacy</h4>
+          </div>
+          <div class="service-card">
+            <h4>Employment Advocacy</h4>
+          </div>
+          <div class="service-card">
+            <h4>Aftercare Planning</h4>
+          </div>
+        </div>
+        <div class="service-info">
+          <p>
+            We're experienced in our individual crafts and understand how each
+            one of our disciplines can lend itself to realizing broader goals
+            for our clients.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Fourth Section -->
     <section class="video-section">
-        <div class="video-container">
-            <div class="video-content">
-                <h2>
-                    WATCH <span class="highlight">THE VIDEO</span>
-                </h2>
-                <div class="video-item">
-                    <h4>
-                        <span class="check-icon">✓</span>
-                        Needs Assessment
-                    </h4>
-                    <p>
-                        The Advocacy Evaluation Toolkit contains the instruments used to collect data for evaluating the Consumer Voices for Coverage program.
-                    </p>
-                </div>
-                <div class="video-item">
-                    <h4>
-                        <span class="check-icon">✓</span>
-                        Insurance Advocacy
-                    </h4>
-                    <p>
-                        We are committed to advocating for appropriate coverage and payment policies.
-                    </p>
-                </div>
-                <div class="video-item">
-                    <h4>
-                        <span class="check-icon">✓</span>
-                        Treatment Planning & Placement
-                    </h4>
-                    <p>
-                        Patients can better understand medical procedures, discharge instructions, etc.
-                    </p>
-                </div>
-            </div>
-            <div class="video-preview">
-                <img src="/Images/image5.png" alt="Video preview" />
-                <div class="play-button">
-                    <div class="play-icon"></div>
-                </div>
-               
-            </div>
+      <div class="video-container">
+        <div class="video-content">
+          <h2>WATCH <span class="highlight">THE VIDEO</span></h2>
+          <div class="video-item">
+            <h4>
+              <span class="check-icon">✓</span>
+              Needs Assessment
+            </h4>
+            <p>
+              The Advocacy Evaluation Toolkit contains the instruments used to
+              collect data for evaluating the Consumer Voices for Coverage
+              program.
+            </p>
+          </div>
+          <div class="video-item">
+            <h4>
+              <span class="check-icon">✓</span>
+              Insurance Advocacy
+            </h4>
+            <p>
+              We are committed to advocating for appropriate coverage and
+              payment policies.
+            </p>
+          </div>
+          <div class="video-item">
+            <h4>
+              <span class="check-icon">✓</span>
+              Treatment Planning & Placement
+            </h4>
+            <p>
+              Patients can better understand medical procedures, discharge
+              instructions, etc.
+            </p>
+          </div>
         </div>
+        <div class="video-preview">
+          <img src="/Images/image5.png" alt="Video preview" />
+          <div class="play-button">
+            <div class="play-icon"></div>
+          </div>
+        </div>
+      </div>
     </section>
-
-</body>
+  </body>
 </html>
 <script src="/js/script.js"></script>

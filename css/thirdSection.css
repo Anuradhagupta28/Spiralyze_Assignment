@@ -1,64 +1,63 @@
- .services {
-            padding: 4rem 0;
-            
-        }
+.services {
+  padding: 4rem 0;
+}
 
-        .services-intro {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
+.services-intro {
+  text-align: center;
+  margin-bottom: 3rem;
+}
 
-        .services-intro h3 {
-            font-size: 1.2rem;
-            color: var(--text-light);
-            margin-bottom: 1rem;
-        }
+.services-intro h3 {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
 
-        .services-intro p {
-            max-width: 800px;
-            margin: 0 auto;
-            color: var(--text-light);
-            line-height: 1.7;
-        }
+.services-intro p {
+  max-width: 800px;
+  margin: 0 auto;
+  color: var(--text-light);
+  line-height: 1.7;
+}
 
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            margin-bottom: 3rem;
-        }
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
 
-        .service-card {
-            background: var(--white);
-            padding: 2rem;
-            border-radius: 10px;
-            text-align: center;
-            border: 2px solid var(--border-light);
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
+.service-card {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid var(--border-light);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
 
-        .service-card:hover {
-            border-color: var(--accent-green);
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
+.service-card:hover {
+  border-color: var(--accent-green);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
 
-        .service-card.active {
-            border-color: var(--accent-green);
-            background: var(--primary-green);
-            color: var(--white);
-        }
+.service-card.active {
+  border-color: var(--accent-green);
+  background: var(--primary-green);
+  color: var(--white);
+}
 
-        .service-card h4 {
-            font-size: 1.1rem;
-            margin-bottom: 1rem;
-        }
+.service-card h4 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
 
-        .service-info {
-            background: var(--primary-green);
-            color: var(--white);
-            padding: 2rem;
-            border-radius: 10px;
-            margin-top: 1rem;
-        }
+.service-info {
+  background: var(--primary-green);
+  color: var(--white);
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
