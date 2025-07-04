@@ -15,8 +15,6 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet"> -->
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -42,6 +40,9 @@
             <a href="tel:123-456-7890" class="call-button"
               >CALL NOW FOR A CONSULT 123-456-7890</a
             >
+          </div>
+          <div class="nav-icon-section">
+            <i class="fas fa-bars" style="color: white"></i>
           </div>
         </div>
       </header>
@@ -193,13 +194,19 @@
     <!-- third Section -->
     <section class="testimonial">
       <div class="testimonial-main">
-        <i class="fa-solid fa-chevron-left grey-icon"></i>
+        <div class="chevron-icon">
+          <i class="fa-solid fa-chevron-left grey-icon"></i>
+        </div>
         <div class="testimonial-container">
-         
+          <div class="testimonial-image">
             <img src="/Images/image4.png" alt="Abbie Harvey" />
-          
+          </div>
+
           <div class="testimonial-content">
-            <h1>Abbie Harvey</h4>
+            <div class="testimonal-header">
+              <h1>Abbie Harvey</h1>
+              <img src="/Images/quote.png" alt="quote" />
+            </div>
             <p>
               I have been caring for my mom & dad off and on for about 10 years
               now, and I know the importance of me being there for appointments.
@@ -208,7 +215,9 @@
             </p>
           </div>
         </div>
-        <i class="fa-solid fa-chevron-right grey-icon"></i>
+        <div class="chevron-icon">
+          <i class="fa-solid fa-chevron-right grey-icon"></i>
+        </div>
       </div>
 
       <div class="testimonial-dots">
@@ -221,21 +230,31 @@
     <section class="services">
       <div class="section-container">
         <h2 class="section-title">
-         <span id="outlined-textBlack">WE</span> <span class="highlight">CAN ORGANIZE EVERYTHING</span>
+          <span id="outlined-textBlack">WE</span>
+          <span class="highlight">CAN ORGANIZE EVERYTHING</span>
         </h2>
         <div class="services-intro">
           <p>
             <span class="FirstWord">Interventions</span>
             <span class="leftpara">
-               should focus on older adult's desire for
-            connectedness, participation and independence.
+              should focus on older adult's desire for connectedness,
+              participation and independence.
             </span>
           </p>
           <p>
-          Loneliness and social isolation are growing public health concerns in our aging society. Whilst these experiences occur across the life span, 50% of individuals aged over 60 are at risk of social isolation and one-third will experience some degree of loneliness later in life. It is vital to reduce loneliness and social isolation among older adults.
+            Loneliness and social isolation are growing public health concerns
+            in our aging society. Whilst these experiences occur across the life
+            span, 50% of individuals aged over 60 are at risk of social
+            isolation and one-third will experience some degree of loneliness
+            later in life. It is vital to reduce loneliness and social isolation
+            among older adults.
           </p>
-           <p>
-          The methodology framework proposed by Asked and O’Malley and further developed by Levac, et al. was used to guide the scoping review process. A total of 33 reviews met the inclusion criteria, evaluating a range of interventions targeted at older people residing in the community or institutionalised settings.
+          <p>
+            The methodology framework proposed by Asked and O’Malley and further
+            developed by Levac, et al. was used to guide the scoping review
+            process. A total of 33 reviews met the inclusion criteria,
+            evaluating a range of interventions targeted at older people
+            residing in the community or institutionalised settings.
           </p>
         </div>
         <div class="services-grid">
@@ -258,56 +277,85 @@
             <h4>Aftercare Planning</h4>
           </div>
         </div>
-       
       </div>
     </section>
 
     <!-- Fourth Section -->
-    <section class="video-section">
-      <div class="video-container">
-        <div class="video-content">
-          <h2 >
-            <span id="outlined-text">WATCH</span> <span class="highlight">THE VIDEO</span></h2>
-          <div class="video-item">
-            <h4>
-              <i class="fa-solid fa-check" style="color: #5bc8af;"></i>
-              Needs Assessment
-            </h4>
-            <p>
-              The Advocacy Evaluation Toolkit contains the instruments used to
-              collect data for evaluating the Consumer Voices for Coverage
-              program.
-            </p>
+
+    <div class="video-section">
+      <div class="left-grid">
+        <img
+          src="./Images/RectangleBackground2.png"
+          alt="Grey Background"
+          class="bg-solid"
+        />
+        <img
+          src="./Images/RectangleBackground.png"
+          alt="Green Image"
+          class="bg-overlay"
+        />
+        <div class="text-content">
+          <h2><span id="outlined-text">WATCH</span> THE VIDEO</h2>
+          <div class="point">
+            <i
+              class="fa-solid fa-check"
+              style="color: #5bc8af; margin-top: 8px"
+            ></i>
+            <div class="sub-Point">
+              <h3>Needs Assessment</h3>
+              <p>
+                The Advocacy Evaluation Toolkit contains the instruments used to
+                collect data for evaluating the Consumer Voices for Coverage
+                program.
+              </p>
+            </div>
           </div>
-          <div class="video-item">
-            <h4>
-              <i class="fa-solid fa-check" style="color: #5bc8af;"></i>
-              Insurance Advocacy
-            </h4>
-            <p>
-              We are committed to advocating for appropriate coverage and
-              payment policies.
-            </p>
+          <div class="point">
+            <i
+              class="fa-solid fa-check"
+              style="color: #5bc8af; margin-top: 8px"
+            ></i>
+            <div class="sub-Point">
+              <h3>Insurance Advocacy</h3>
+              <p>
+                We are committed to advocating for appropriate coverage and
+                payment policies.
+              </p>
+            </div>
           </div>
-          <div class="video-item">
-            <h4>
-              <i class="fa-solid fa-check" style="color: #5bc8af;"></i>
-              Treatment Planning & Placement
-            </h4>
-            <p>
-              Patients can better understand medical procedures, discharge
-              instructions, etc.
-            </p>
-          </div>
-        </div>
-        <div class="video-preview">
-          <img src="/Images/image5.png" alt="Video preview" />
-          <div class="play-button">
-            <div class="play-icon"></div>
+          <div class="point">
+            <i
+              class="fa-solid fa-check"
+              style="color: #5bc8af; margin-top: 8px"
+            ></i>
+            <div class="sub-Point">
+              <h3>Treatment Planning & Placement</h3>
+              <p>
+                Patients can better understand medical procedures, discharge
+                instructions, etc.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+
+      <div class="right-grid">
+        <img src="./Images/image5.png" alt="People Sitting" />
+        <div class="play-button">
+          <div class="circle">
+            <div class="play-icon"></div>
+          </div>
+        </div>
+        <a href="#" class="lstlogo">
+          <span id="lstlogo-left">GET AN</span> INTERVENTION</a
+        >
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+      <p>@2021 Get an Intervention Inc. All right reserved</p>
+      <p>Privacy Policy | Terms of use | site map</p>
+    </div>
   </body>
 </html>
 <script src="/js/script.js"></script>

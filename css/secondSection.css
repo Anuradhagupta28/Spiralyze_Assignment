@@ -85,3 +85,20 @@
   border: 3px solid #5bc8af;
   width: 100%;
 }
+
+@media (max-width: 1024px) {
+  .image-gallery {
+    padding: 2rem;
+  }
+
+  .understanding {
+    padding: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  .understanding-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

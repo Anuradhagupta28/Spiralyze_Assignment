@@ -62,10 +62,12 @@ img {
   padding-left: 7px;
   border-left: 2px solid white;
   font-weight: 100;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
-
+#logo-mid {
+  font-weight: 100;
+}
 #outlined-text {
   font-weight: 600;
   color: transparent;
@@ -103,6 +105,7 @@ img {
 
 .nav-menu a:hover {
   color: var(--white);
+  text-decoration: underline;
 }
 
 .call-button {
@@ -111,4 +114,76 @@ img {
   padding: 0.75rem 1.5rem;
   text-decoration: none;
   font-weight: bold;
+}
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #eaeaea;
+  padding: 3%;
+  gap: 2%;
+}
+.footer p {
+  color: #959595;
+  width: 100%;
+}
+.nav-icon-section {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin-left: 20px;
+  }
+
+  .nav-right-section {
+    margin-top: 0px !important;
+  }
+
+  .call-button {
+    display: none;
+  }
+
+  .nav-divider {
+    display: none;
+  }
+  .nav-right-section {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    width: 30%;
+    margin-top: 3%;
+  }
+  .nav-icon-section {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .nav-right-section {
+    display: none;
+  }
+
+  .nav-icon-section {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+
+  .mobile-call-icon {
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    background-color: #0f4b3f;
+    padding: 8px;
+    border-radius: 50%;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
